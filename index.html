@@ -2,29 +2,34 @@
 <html>
 <head>
 	<title>Merit List</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <input type="file" name="fileName" id="file" accept=".txt">
-  <input type="submit" name="upload" id="upload" value="Upload">
-  &emsp;&emsp;<span id="status"></span>
-  <h4>Enter Categorywise Seat Capacity:</h4>
-  Unreserved: <input type='number' name='ur' id='ur'>&emsp;&emsp;
-  OBC: <input type='number' name='obc' id='obc'>&emsp;&emsp;
-  SC: <input type='number' name='sc' id='sc'>&emsp;&emsp;
-  ST(P): <input type='number' name='stp' id='stp'><br><br>
-  ST(H): <input type='number' name='sth' id='sth'>&emsp;&emsp;
-  EWS: <input type='number' name='ews' id='ews'>&emsp;&emsp;
-  Other: <input type='number' name='other' id='other'><br>
-  <br>
-  <button onclick="genData(data);">Generate Merit List</button>
+  <h1>Merit List Generator</h1>
+  
+  <div class="div_1">
+    <input type="file" name="fileName" id="file" accept=".txt">
+    <input type="submit" name="upload" class= "button_1" id="upload" value="Upload">
+    &emsp;&emsp;<span id="status"></span>
+    <p class="para_1">Enter Categorywise Seat Capacity:</p>
+    Unreserved: <input type='number' name='ur' id='ur'>&emsp;&emsp;
+    OBC: <input type='number' name='obc' id='obc'>&emsp;&emsp;
+    SC: <input type='number' name='sc' id='sc'>&emsp;&emsp;
+    ST(P): <input type='number' name='stp' id='stp'><br><br>
+    ST(H): <input type='number' name='sth' id='sth'>&emsp;&emsp;
+    EWS: <input type='number' name='ews' id='ews'>&emsp;&emsp;
+    Other: <input type='number' name='other' id='other'>
+  </div>
+  <button class="button_1" onclick="genData(data);">Generate Merit List</button>
   <br><br>
   <textarea id="output" rows='25' cols='160'></textarea>
   <br>
-  <button onclick="copyData();">Copy</button>
+  <button class="button_1" onclick="copyData();">Copy</button>
   
 
   <!--<input type="button" id="btn" value="Download" />-->
+  <p class="footer">&copy; All rights reserved to Bikash Sharam</p>
   <script src="scripts.js"></script>
 </body>
 </html>
