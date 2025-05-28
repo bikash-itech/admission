@@ -79,7 +79,7 @@ function genData(data){
   let s_other ="";
   let s_extra ="";
   for(k in keys){
-      s+="\t"+keys[k];
+      s+="\t"+keys[k].toUpperCase();
       }
   s+="\r\n";
   let i={ur: 0, obc:0, sc:0, stp:0, sth:0, ews:0, other:0};
