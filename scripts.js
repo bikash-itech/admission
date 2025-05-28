@@ -124,7 +124,7 @@ function genData(data){
         }
         s_stp+="\r\n";
         i.stp++;
-      }else if(line.category==="ST(H)" && i.stp<sth){
+      }else if(line.category==="ST(H)" && i.sth<sth){
         if(i.sth===0){
           s_sth+="Category: ST(H)\n";
         }
